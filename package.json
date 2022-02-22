@@ -1,0 +1,27 @@
+{
+  "name": "lightning",
+  "version": "1.0.0",
+  "description": "Real-time Video Chat for Web. Like Zoom for minimalists. Super quick and lightweight.",
+  "main": "server.js",
+  "scripts": {  
+    "watch": "nodemon ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",  
+    "url": "git+https://github.com/chinalantern/lightning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinalantern/lightning/issues"
+  },
+  "homepage": "https://github.com/chinalantern/lightning#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1"
+  }
+}
