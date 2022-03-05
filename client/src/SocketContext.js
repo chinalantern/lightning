@@ -4,7 +4,8 @@ import Peer from 'simple-peer'
 
 const SocketContext = createContext()
 
-const socket = io('http://localhost:5000')  // pass in the server url
+// const socket = io('http://localhost:5000')  // pass in the server url
+const socket = io('https://lightning-chat.herokuapp.com/')  // pass in the server url
 
 const ContextProvider = ({ children }) => {
 

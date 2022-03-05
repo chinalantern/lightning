@@ -4,8 +4,8 @@
   "description": "Real-time Video Chat for Web. Like Zoom for minimalists. Super quick and lightweight.",
   "main": "server.js",
   "scripts": {  
-    "watch": "nodemon ./server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "watch": "nodemon ./server.js"
   },
   "repository": {
     "type": "git",  
