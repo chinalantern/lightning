@@ -42,7 +42,7 @@ const Options = ({ children }) => {
     const { me, callAccepted, name, setName, callEnded, leaveCall, callUser } = useContext(SocketContext)
     const [idToCall, setIdToCall] = useState('')
     const classes = useStyles()
-
+  
   return (
       <Container className={classes.container}>
             <Paper elevation={10} className={classes.paper}>
@@ -68,22 +68,18 @@ const Options = ({ children }) => {
                                   End Call
                               </Button>
                           ) : (
-                                <Button className={classes.margin} variant="contained" color="primary" fullWidth startIcon={<Phone fontSize="large" />} onClick={() => callUser(idToCall)} >
+                                <Button className={classes.margin} variant="contained" color="primary" fullWidth startIcon={<Phone fontSize="large" />} onClick={ () => callUser(idToCall) } >
                                     Call      
                                 </Button>
-                            )
-                          }
-                           
+                            )}
                       </Grid>
                       
                   </Grid>  
                 </form>
+                
+                { children }
+                
           </Paper>
-          {
-            //   TODO START HERE AND AT 1HR 8MIN ON VID https://www.youtube.com/watch?v=oxFr7we3LC8
-          }
-          Options
-          {children }
       </Container>
   )
 }
